@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Todo from './Todo'
+
+import { Todo } from './index'
 
 const TodoList = ({ todos, onTodoClick }) => (
   <ul>

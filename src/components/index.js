@@ -1,6 +1,5 @@
-export const App = require('./App')
-export const Footer = require('./Footer')
-export const Link = require('./Link')
-export const Todo = require('./Todo')
-export const TodoList = require('./TodoList')
-
+export const App = require('./App').default
+export const Footer = require('./Footer').default
+export const Link = require('./Link').default
+export const Todo = require('./Todo').default
+export const TodoList = require('./TodoList').default

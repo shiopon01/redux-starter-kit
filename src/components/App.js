@@ -1,7 +1,11 @@
 import React from 'react'
-import Footer from './Footer'
+
+// containers
 import AddTodo from '../containers/AddTodo'
 import VisibleTodoList from '../containers/VisibleTodoList'
+
+// components
+import { Footer } from './index'
 
 const App = () => (
   <div>
