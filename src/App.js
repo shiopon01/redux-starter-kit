@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
-import logo from './logo.svg'
+import injectStyle from './unit/injectStyle'
 // import './App.css' // Possible to import css :)
+import logo from './logo.svg'
 
 // containers
 import { AddTodo, VisibleTodoList } from './containers'
@@ -9,7 +10,20 @@ import { AddTodo, VisibleTodoList } from './containers'
 import { Footer } from './components'
 
 class App extends Component {
+  constructor(props) {
+    super(props)
+
+    const keyframesStyle = myKeyframeStyles
+    injectStyle(keyframesStyle);
+
+    this.state = {
+      style: myStyles
+    }
+  }
+
   render() {
+    const { style } = this.state;
+
     return (
       <div style={style.app}>
         <header style={style.appHeader}>
@@ -29,7 +43,13 @@ class App extends Component {
   }
 }
 
-let style = {
+const myKeyframeStyles = `
+  @keyframes App-logo-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }`
+
+const myStyles = {
   app: {
     textAlign: 'center'
   },
