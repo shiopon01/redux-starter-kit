@@ -14,7 +14,7 @@ class App extends Component {
     super(props)
 
     const keyframesStyle = myKeyframeStyles
-    injectStyle(keyframesStyle);
+    injectStyle(keyframesStyle)
 
     this.state = {
       style: myStyles
@@ -22,7 +22,7 @@ class App extends Component {
   }
 
   render() {
-    const { style } = this.state;
+    const { style } = this.state
 
     return (
       <div style={style.app}>
@@ -39,7 +39,7 @@ class App extends Component {
           <Footer />
         </div>
       </div>
-    );
+    )
   }
 }
 
@@ -75,4 +75,4 @@ const myStyles = {
   },
 }
 
-export default App;
+export default App

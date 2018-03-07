@@ -1,17 +1,19 @@
 // Actions
+
 const ADD_TODO = 'ADD_TODO'
 const TOGGLE_TODO = 'TOGGLE_TODO'
 
 // Reducer
+
 export default function todos (state = [], action) {
   switch (action.type) {
     case ADD_TODO:
       return [
         ...state,
         {
-        id: action.id,
-        text: action.text,
-        completed: false
+          id: action.id,
+          text: action.text,
+          completed: false
         }
       ]
     case TOGGLE_TODO:
