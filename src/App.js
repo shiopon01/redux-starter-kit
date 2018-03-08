@@ -13,7 +13,7 @@ class App extends Component {
   constructor(props) {
     super(props)
 
-    const keyframesStyle = myKeyframeStyles
+    const keyframesStyle = myKeyframeStyle
     injectStyle(keyframesStyle)
 
     this.state = {
@@ -43,7 +43,7 @@ class App extends Component {
   }
 }
 
-const myKeyframeStyles = `
+const myKeyframeStyle = `
   @keyframes App-logo-spin {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }

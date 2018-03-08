@@ -4,12 +4,19 @@ import PropTypes from 'prop-types'
 import Todo from './Todo'
 
 const TodoList = ({ todos, onTodoClick }) => (
-  <ul>
+  <ol style={style.list}>
     {todos.map(todo => (
       <Todo key={todo.id} {...todo} onClick={() => onTodoClick(todo.id)} />
     ))}
-  </ul>
+  </ol>
 )
+
+const style = {
+  list: {
+    listStyle: 'none',
+    color: 'rgba(0,0,0,.7)'
+  },
+}
 
 TodoList.propTypes = {
   todos: PropTypes.arrayOf(
