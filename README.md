@@ -10,18 +10,18 @@ The project structure presented in this template is module structure, where func
 
 ```
 .
-├── public                      # Static public assets (not imported anywhere in source code)
-├── src                         # Application source code
-│   ├── index.js                # Main render
-│   ├── components              # Global Reusable Components
-│   ├── containers              # Global Reusable Container Components
-│   ├── modules                 # Main action logic files (include Action, Reducer, Action Creator)
-│   │   ├── reducers.js         # Combine Reducers for Main render
-│   │   ├── todos.js            # Functions such as `ADD_TODO`
-│   │   ├── todos.spec.js       # Unit test
-│   │   └── visibilityFilter.js # Filter function
-│   └── unit                    # Small functions (as helper)
-│       ├── injectStyle.js      # You can use `@keyframes` by this function
+├── public                           # Static public assets (not imported anywhere in source code)
+├── src                              # Application source code
+│   ├── index.js                     # Main render
+│   ├── components                   # Global Reusable Components
+│   ├── containers                   # Global Reusable Container Components
+│   ├── modules                      # Main action logic files (include Action, Reducer, Action Creator)
+│   │   ├── reducers.js              # Combine Reducers for Main render
+│   │   ├── todos.js                 # Functions such as `ADD_TODO`
+│   │   ├── todos.spec.js            # Unit test
+│   │   └── visibilityFilter.js      # Filter function
+│   └── unit                         # Small functions (as helper)
+│       ├── injectStyle.js           # You can use `@keyframes` by this function
 │       └── registerServiceWorker.js # offline cache https://goo.gl/KwvDNy
 └── LICENSE                          # License is MIT
 ```

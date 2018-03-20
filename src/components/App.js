@@ -30,7 +30,7 @@ class App extends Component {
           <h1 style={style.appTitle}>Welcome to React/Redux starter kit</h1>
         </header>
         <p style={style.appIntro}>
-          To get started, edit <code>src/App.js</code> and save to reload.
+          To get started, edit <code>src/components/App.js</code> and save to reload.
         </p>
         <div>
           <AddTodo />
