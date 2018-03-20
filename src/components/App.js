@@ -1,13 +1,12 @@
 import React, { Component } from 'react'
-import injectStyle from './unit/injectStyle'
-// import './App.css' // Possible to import css :)
-import logo from './logo.svg'
+import injectStyle from '../unit/injectStyle'
+import logo from '../unit/logo.svg'
 
 // containers
-import { AddTodo, VisibleTodoList } from './containers'
+import { AddTodo, VisibleTodoList } from '../containers'
 
 // components
-import { Footer } from './components'
+import Footer from './Footer'
 
 class App extends Component {
   constructor(props) {

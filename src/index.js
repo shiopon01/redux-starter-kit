@@ -1,15 +1,14 @@
 import React from 'react'
 import { render } from 'react-dom'
-import { Provider } from 'react-redux'
 import { createStore } from 'redux'
+import { Provider } from 'react-redux'
+import App from './components/App'
+import rootReducer from './modules/reducers'
 
-import App from './App'
-import reducers from './modules/reducer'
+import registerServiceWorker from './unit/registerServiceWorker'
+// import '../App.css' // Possible to import css :)
 
-import registerServiceWorker from './registerServiceWorker'
-import './index.css';
-
-let store = createStore(reducers)
+let store = createStore(rootReducer)
 
 render(
   <Provider store={store}>
