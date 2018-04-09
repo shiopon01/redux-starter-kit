@@ -3,7 +3,7 @@ import injectStyle from '../unit/injectStyle'
 import logo from '../unit/logo.svg'
 
 // containers
-import { AddTodo, VisibleTodoList } from '../containers'
+import { AddTodo, VisibleTodoList } from '../containers/_collect'
 
 // components
 import Footer from './Footer'

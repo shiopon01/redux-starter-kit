@@ -15,8 +15,9 @@ The project structure presented in this template is module structure, where func
 │   ├── index.js                     # Main render
 │   ├── components                   # Global Reusable Components
 │   ├── containers                   # Global Reusable Container Components
+│   │   └── _collect.js              # Collect Container Components for Export
 │   ├── modules                      # Main action logic files (include Action, Reducer, Action Creator)
-│   │   ├── reducers.js              # Combine Reducers for Main render
+│   │   ├── _reducers.js             # Combine Reducers for Main render
 │   │   ├── todos.js                 # Functions such as `ADD_TODO`
 │   │   ├── todos.spec.js            # Unit test
 │   │   └── visibilityFilter.js      # Filter function
@@ -27,3 +28,5 @@ The project structure presented in this template is module structure, where func
 ```
 
 ![structure](https://raw.githubusercontent.com/shiopon01/redux-starter-kit/images/structure.jpg)
+
+Don't use middleware. If you use middleware, you can include it in createStore of `/src/index.js`
