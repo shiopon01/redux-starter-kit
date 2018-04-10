@@ -29,4 +29,4 @@ The project structure presented in this template is module structure, where func
 
 ![structure](https://raw.githubusercontent.com/shiopon01/redux-starter-kit/images/structure.jpg)
 
-Don't use middleware. If you use middleware, you can include it in createStore of `/src/index.js`
+I feel that all application include API requests. So I included 'redux-thunk' in this repository. (And, 'redux-logger' :D)
