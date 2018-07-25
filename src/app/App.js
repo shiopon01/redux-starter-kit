@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import {
-  BrowserRouter as Router,
-  // HashRouter as Router,
+  BrowserRouter as Router, // localhost:3000/home
+  // HashRouter as Router, // localhost:3000/#/home <- URL Fragment
   Route
 } from 'react-router-dom';
 import injectStyle from '../utils/injectStyle'
