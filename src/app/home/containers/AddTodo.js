@@ -3,9 +3,11 @@ import { connect } from 'react-redux'
 
 import { addTodo } from '../modules/todos'
 
-let AddTodo = ({ dispatch }) => {
-  let input
+const AddTodoComponent = ({
+  addTodoClick
+}) => {
 
+  let input
   return (
     <div>
       <form
@@ -14,7 +16,7 @@ let AddTodo = ({ dispatch }) => {
           if (!input.value.trim()) {
             return
           }
-          dispatch(addTodo(input.value))
+          addTodoClick(input.value)
           input.value = ''
         }}
       >
@@ -31,6 +33,17 @@ let AddTodo = ({ dispatch }) => {
   )
 }
 
-AddTodo = connect()(AddTodo)
+const mapDispatchToProps = dispatch => {
+  const addTodoClick = (value) => dispatch(addTodo(value))
 
-export default AddTodo
+  return {
+    addTodoClick
+  }
+}
+
+const AddTodoContainer = connect(
+  null,
+  mapDispatchToProps
+)(AddTodoComponent)
+
+export default AddTodoContainer

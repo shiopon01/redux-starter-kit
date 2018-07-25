@@ -1,21 +1,20 @@
 import React from 'react'
-import { render } from 'react-dom'
-import { createStore, applyMiddleware } from 'redux'
-import thunk from 'redux-thunk'
-import logger from 'redux-logger'
+import ReactDOM from 'react-dom'
 import { Provider } from 'react-redux'
-import App from './components/App'
-import rootReducer from './modules/_reducers'
+import { createStore, applyMiddleware } from 'redux'
+import logger from 'redux-logger'
+import thunk from 'redux-thunk'
 
-import registerServiceWorker from './unit/registerServiceWorker'
-// import './style.css' // Possible to import css :)
+import App from './app/App'
+import rootReducer from './reducers'
+import registerServiceWorker from './registerServiceWorker'
 
-let store = createStore(
-  rootReducer,
-  applyMiddleware(thunk, logger)
-)
+// import './style.css' // Possible to import your css
 
-render(
+const middleware = applyMiddleware(thunk, logger)
+const store = createStore(rootReducer, middleware)
+
+ReactDOM.render(
   <Provider store={store}>
     <App />
   </Provider>,

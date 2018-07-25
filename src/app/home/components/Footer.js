@@ -1,6 +1,5 @@
 import React from 'react'
 
-// containers
 import FilterLink from '../containers/FilterLink'
 
 const Footer = () => (
