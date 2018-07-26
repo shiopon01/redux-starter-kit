@@ -7,7 +7,7 @@ import AddTodo from './containers/AddTodo'
 import VisibleTodoList from './containers/VisibleTodoList'
 import Footer from './components/Footer'
 
-const HomeComponent = ({ home }) => (
+const HomeComponent = () => (
   <div style={css.app}>
     <header style={css.appHeader}>
       <img src={logo} style={css.appLogo} alt="logo" />
