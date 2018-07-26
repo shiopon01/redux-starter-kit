@@ -1,3 +1,5 @@
-/src/registerServiceWorker.js
-/src/utils
+lib
+node_modules
+src/utils
+src/registerServiceWorker.js
 *.spec.js
