@@ -2,21 +2,19 @@ import React from 'react'
 import { connect } from 'react-redux'
 import logo from '../../utils/logo.svg'
 
+// import components
 import AddTodo from './containers/AddTodo'
 import VisibleTodoList from './containers/VisibleTodoList'
 import Footer from './components/Footer'
 
-const HomeComponent = ({
-  home
-}) => (
-
+const HomeComponent = ({ home }) => (
   <div style={css.app}>
     <header style={css.appHeader}>
       <img src={logo} style={css.appLogo} alt="logo" />
       <h1 style={css.appTitle}>Welcome to React/Redux starter kit</h1>
     </header>
     <p style={css.appIntro}>
-      To get started, edit <code>src/components/App.js</code> and save to reload.
+      To get started, edit <code>src/app/home/Home.js</code> and save to reload.
     </p>
     <div>
       <AddTodo />

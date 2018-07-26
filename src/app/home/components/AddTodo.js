@@ -29,7 +29,6 @@ const AddTodo = ({ addTodoClick }) => {
   )
 }
 
-
 AddTodo.propTypes = {
   addTodoClick: PropTypes.func.isRequired
 }
