@@ -1,3 +1,5 @@
+// can use `@keyframes`
+
 const injectStyle = (style) => {
   const styleElement = document.createElement('style')
   let styleSheet = null

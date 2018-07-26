@@ -3,7 +3,7 @@
 const ADD_TODO = 'ADD_TODO'
 const TOGGLE_TODO = 'TOGGLE_TODO'
 
-// Reducer
+// Reducers
 
 export default function todos (state = [], action) {
   switch (action.type) {
@@ -46,6 +46,3 @@ export const toggleTodo = id => {
     id
   }
 }
-
-// side effects, only as applicable
-// e.g. thunks, epics, etc

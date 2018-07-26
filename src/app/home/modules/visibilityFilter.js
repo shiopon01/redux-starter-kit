@@ -22,7 +22,3 @@ export const setVisibilityFilter = filter => {
     filter
   }
 }
-
-// side effects, only as applicable
-// e.g. thunks, epics, etc
-

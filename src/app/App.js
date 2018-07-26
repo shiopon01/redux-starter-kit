@@ -3,9 +3,10 @@ import {
   BrowserRouter as Router, // localhost:3000/home
   // HashRouter as Router, // localhost:3000/#/home <- URL Fragment
   Route
-} from 'react-router-dom';
+} from 'react-router-dom'
 import injectStyle from '../utils/injectStyle'
 
+// Routeing page import
 import Home from './home/Home'
 
 const myKeyframeStyle = `
@@ -21,6 +22,7 @@ class App extends Component {
     injectStyle(keyframesStyle)
   }
 
+  // Create your application routing
   render() {
     return (
       <Router>
