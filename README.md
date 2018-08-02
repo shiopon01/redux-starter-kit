@@ -12,23 +12,27 @@ The project structure presented in this template is module structure, where func
 ├── src                                     # Application source code
 │   ├── index.js                            # Main render
 │   ├── reducers.js                         # Combine Reducers for Main render
-│   ├── registerServiceWorker.js            # offline cache https://goo.gl/KwvDNy
+│   ├── registerServiceWorker.js            # Offline cache https://goo.gl/KwvDNy
+│   ├── shareComponents                     # Share components
+│   │   └── Header.js                      # Page header
 │   ├── utils                               # Small functions (as helper)
 │   │   ├── logo.svg                        # React icon svg
 │   │   ├── consts.js                       # Your environment variables
 │   │   └── injectStyle.js                  # You can use `@keyframes` by this function
 │   └── app                                 # Application main sources
 │        ├── App.js                         # Routing
-│        └── home                           # Route
-│             ├── index.js                  # Root Container (Connecter)
-│             ├── Home.js                   # Root Component
+│        ├── home                           # Route (home)
+│        │   ├── index.js                  # Root Container (home)
+│        │   └── Home.js                   # Root Component (home)
+│        └── todo                           # Route (todo)
+│             ├── index.js                  # Root Container (todo)
+│             ├── Home.js                   # Root Component (todo)
 │             ├── components                # Global Reusable Components
 │             ├── containers                # Global Reusable Container Components
 │             └── modules                   # Main action logic files (include Action, Reducer, Action Creator)
 │                  ├── reducers.js          # Combine Reducers for Main render
 │                  ├── todos.js             # Functions such as `ADD_TODO`
-│                  ├── todos.spec.js        # Unit test
-│                  └── visibilityFilter.js  # Filter function
+│                  └── todos.spec.js        # Unit test
 └── LICENSE                                 # License is MIT
 ```
 

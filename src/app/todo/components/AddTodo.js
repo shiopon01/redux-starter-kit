@@ -17,14 +17,29 @@ const AddTodo = ({ addTodoClick }) => {
         }}
       >
         <input
+          style={css.input}
           ref={node => {
             input = node
           }}
         />
-        <button type="submit">Add Todo</button>
+        <button style={css.button} type="submit">
+          Add Todo
+        </button>
       </form>
     </div>
   )
+}
+
+const css = {
+  input: {
+    width: '100%',
+    fontSize: '1.5em',
+  },
+
+  button: {
+    width: '90%',
+    fontSize: '1.5em',
+  },
 }
 
 AddTodo.propTypes = {

@@ -1,17 +1,22 @@
 import React from 'react'
 
 // import components
+import Header from '../../shareComponents/Header'
+
 import TodoList from './containers/TodoList'
 import AddTodo from './containers/AddTodo'
 
-const EmptyComponent = () => (
+const TodoComponent = () => (
   <div style={css.app}>
-    <header style={css.appHeader}>
-      <h1 style={css.appTitle}>Welcome to React/Redux starter kit</h1>
-    </header>
-    <div>
-      <AddTodo />
-      <TodoList />
+    <Header />
+
+    <div style={css.container}>
+      <div style={css.addTodo}>
+        <AddTodo />
+      </div>
+      <div style={css.todoList}>
+        <TodoList />
+      </div>
     </div>
   </div>
 )
@@ -21,17 +26,23 @@ const css = {
     textAlign: 'center',
   },
 
-  appHeader: {
-    backgroundColor: '#222',
-    height: '100px',
-    padding: '10px',
-    color: 'white',
-    textAlign: 'center',
+  container: {
+    marginTop: '10px',
+    display: 'grid',
+    gridGap: '15px',
+    gridTemplateColumns: '10% repeat(3, 1fr) 10%',
+    gridTemplateRows: '1fr',
   },
 
-  appTitle: {
-    fontSize: '1.5em',
+  addTodo: {
+    gridColumn: '2',
+    gridRow: '1',
+  },
+
+  todoList: {
+    gridColumn: '3/5',
+    gridRow: '1',
   },
 }
 
-export default EmptyComponent
+export default TodoComponent

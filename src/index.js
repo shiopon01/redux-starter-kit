@@ -9,8 +9,6 @@ import App from './app/App'
 import rootReducer from './reducers'
 import registerServiceWorker from './registerServiceWorker'
 
-// import './style.css' // Possible to import your css
-
 const middleware = applyMiddleware(thunk, logger)
 const store = createStore(rootReducer, middleware)
 

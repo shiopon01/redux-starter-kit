@@ -3,15 +3,23 @@ import PropTypes from 'prop-types'
 
 import Todo from './Todo'
 
-const TodoList = ({ todos, onTodoClick }) => (
-  <ol style={style.list}>
-    {todos.map(todo => (
-      <Todo key={todo.id} {...todo} onClick={() => onTodoClick(todo.id)} />
-    ))}
-  </ol>
-)
+const TodoList = ({ todos, onTodoClick }) => {
+  let bgColor = 0
+  return (
+    <ol style={css.list}>
+      {todos.map(todo => (
+        <Todo
+          key={todo.id}
+          {...todo}
+          onClick={() => onTodoClick(todo.id)}
+          bgColor={bgColor++}
+        />
+      ))}
+    </ol>
+  )
+}
 
-const style = {
+const css = {
   list: {
     listStyle: 'none',
     color: 'rgba(0,0,0,.7)',

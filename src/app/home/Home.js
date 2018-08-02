@@ -1,25 +1,14 @@
 import React from 'react'
-import logo from '../../utils/logo.svg'
 
 // import components
-import AddTodo from './containers/AddTodo'
-import VisibleTodoList from './containers/VisibleTodoList'
-import Footer from './components/Footer'
+import Header from '../../shareComponents/Header'
 
 const HomeComponent = () => (
   <div style={css.app}>
-    <header style={css.appHeader}>
-      <img src={logo} style={css.appLogo} alt="logo" />
-      <h1 style={css.appTitle}>Welcome to React/Redux starter kit</h1>
-    </header>
+    <Header />
     <p style={css.appIntro}>
       To get started, edit <code>src/app/home/Home.js</code> and save to reload.
     </p>
-    <div>
-      <AddTodo />
-      <VisibleTodoList />
-      <Footer />
-    </div>
   </div>
 )
 
@@ -31,17 +20,6 @@ const css = {
   appLogo: {
     animation: 'App-logo-spin infinite 20s linear',
     height: '80px',
-  },
-
-  appHeader: {
-    backgroundColor: '#222',
-    height: '150px',
-    padding: '20px',
-    color: 'white',
-  },
-
-  appTitle: {
-    fontSize: '1.5em',
   },
 
   appIntro: {
