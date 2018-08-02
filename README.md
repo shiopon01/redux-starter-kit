@@ -41,3 +41,6 @@ I feel that all application include API requests. So I included 'redux-thunk' in
 ## Supplement
 
 This application depends on the `react-script`. However, if you are not satisfied then please run `npm run eject`.
+
+- If you find an ENOSPC error when you run `yarn test` anymore
+  - run `echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p`

@@ -8,6 +8,7 @@ import injectStyle from '../utils/injectStyle'
 
 // Routeing page import
 import Home from './home'
+import Todo from './todo'
 
 const myKeyframeStyle = `
   @keyframes App-logo-spin {
@@ -28,7 +29,7 @@ class App extends Component {
       <Router>
         <div>
           <Route exact path="/" component={Home} />
-          <Route exact path="/home" component={Home} />
+          <Route exact path="/todo" component={Todo} />
         </div>
       </Router>
     )
