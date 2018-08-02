@@ -21,16 +21,14 @@ const AddTodo = ({ addTodoClick }) => {
             input = node
           }}
         />
-        <button type="submit">
-          Add Todo
-        </button>
+        <button type="submit">Add Todo</button>
       </form>
     </div>
   )
 }
 
 AddTodo.propTypes = {
-  addTodoClick: PropTypes.func.isRequired
+  addTodoClick: PropTypes.func.isRequired,
 }
 
 export default AddTodo

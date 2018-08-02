@@ -7,10 +7,10 @@ import AddTodo from '../components/AddTodo'
 import { addTodo } from '../modules/todos'
 
 const mapDispatchToProps = dispatch => {
-  const addTodoClick = (value) => dispatch(addTodo(value))
+  const addTodoClick = value => dispatch(addTodo(value))
 
   return {
-    addTodoClick
+    addTodoClick,
   }
 }
 

@@ -1,5 +1,4 @@
 import React from 'react'
-import { connect } from 'react-redux'
 import logo from '../../utils/logo.svg'
 
 // import components
@@ -26,30 +25,28 @@ const HomeComponent = () => (
 
 const css = {
   app: {
-    textAlign: 'center'
+    textAlign: 'center',
   },
 
   appLogo: {
     animation: 'App-logo-spin infinite 20s linear',
-    height: '80px'
+    height: '80px',
   },
 
   appHeader: {
     backgroundColor: '#222',
     height: '150px',
     padding: '20px',
-    color: 'white'
+    color: 'white',
   },
 
   appTitle: {
-    fontSize: '1.5em'
+    fontSize: '1.5em',
   },
 
   appIntro: {
-    fontSize: 'large'
+    fontSize: 'large',
   },
 }
 
-const HomeContainer = connect()(HomeComponent)
-
-export default HomeContainer
+export default HomeComponent

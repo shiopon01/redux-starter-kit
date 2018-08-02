@@ -2,12 +2,12 @@ import React, { Component } from 'react'
 import {
   BrowserRouter as Router, // localhost:3000/home
   // HashRouter as Router, // localhost:3000/#/home <- URL Fragment
-  Route
+  Route,
 } from 'react-router-dom'
 import injectStyle from '../utils/injectStyle'
 
 // Routeing page import
-import Home from './home/Home'
+import Home from './home'
 
 const myKeyframeStyle = `
   @keyframes App-logo-spin {
@@ -27,8 +27,8 @@ class App extends Component {
     return (
       <Router>
         <div>
-          <Route exact path='/' component={Home}/>
-          <Route exact path='/home' component={Home}/>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/home" component={Home} />
         </div>
       </Router>
     )

@@ -24,5 +24,14 @@
     "url": "git+https://github.com/shiopon01/redux-starter-kit.git"
   },
   "author": "shiopon01 <shio.0323@gmail.com> (http://shiopon.net)",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^5.2.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-prettier": "^2.6.2",
+    "eslint-plugin-react": "^7.10.0",
+    "eslint-plugin-react-redux": "^2.3.0",
+    "prettier": "^1.14.0"
+  }
 }

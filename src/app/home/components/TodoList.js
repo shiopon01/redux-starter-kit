@@ -14,7 +14,7 @@ const TodoList = ({ todos, onTodoClick }) => (
 const style = {
   list: {
     listStyle: 'none',
-    color: 'rgba(0,0,0,.7)'
+    color: 'rgba(0,0,0,.7)',
   },
 }
 
@@ -23,10 +23,10 @@ TodoList.propTypes = {
     PropTypes.shape({
       id: PropTypes.number.isRequired,
       completed: PropTypes.bool.isRequired,
-      text: PropTypes.string.isRequired
+      text: PropTypes.string.isRequired,
     }).isRequired
   ).isRequired,
-  onTodoClick: PropTypes.func.isRequired
+  onTodoClick: PropTypes.func.isRequired,
 }
 
 export default TodoList

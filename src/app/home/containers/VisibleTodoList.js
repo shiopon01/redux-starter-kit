@@ -20,7 +20,7 @@ const getVisibleTodos = (todos, filter) => {
 
 const mapStateToProps = state => {
   return {
-    todos: getVisibleTodos(state.home.todos, state.home.visibilityFilter)
+    todos: getVisibleTodos(state.home.todos, state.home.visibilityFilter),
   }
 }
 
@@ -28,7 +28,7 @@ const mapDispatchToProps = dispatch => {
   return {
     onTodoClick: id => {
       dispatch(toggleTodo(id))
-    }
+    },
   }
 }
 

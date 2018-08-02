@@ -5,7 +5,7 @@ import { combineReducers } from 'redux'
 import home from './app/home/modules/reducers'
 
 const rootReducer = combineReducers({
-  home
+  home,
 })
 
 export default rootReducer
