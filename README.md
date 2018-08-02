@@ -20,7 +20,8 @@ The project structure presented in this template is module structure, where func
 │   └── app                                 # Application main sources
 │        ├── App.js                         # Routing
 │        └── home                           # Route
-│             ├── Home.js                   # Root Container
+│             ├── index.js                  # Root Container (Connecter)
+│             ├── Home.js                   # Root Component
 │             ├── components                # Global Reusable Components
 │             ├── containers                # Global Reusable Container Components
 │             └── modules                   # Main action logic files (include Action, Reducer, Action Creator)
