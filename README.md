@@ -8,39 +8,39 @@ The project structure presented in this template is module structure, where func
 
 ```
 .
-├── public                                  # Static public assets (not imported anywhere in source code)
-├── src                                     # Application source code
-│   ├── index.js                            # Main render
-│   ├── reducers.js                         # Combine Reducers for Main render
-│   ├── registerServiceWorker.js            # Offline cache https://goo.gl/KwvDNy
-│   ├── shareComponents                     # Share components
-│   │   └── Header.js                      # Page header
-│   ├── utils                               # Small functions (as helper)
-│   │   ├── logo.svg                        # React icon svg
-│   │   ├── consts.js                       # Your environment variables
-│   │   └── injectStyle.js                  # You can use `@keyframes` by this function
-│   └── app                                 # Application main sources
-│        ├── App.js                         # Routing
-│        ├── home                           # Route (home)
-│        │   ├── index.js                  # Root Container (home)
-│        │   └── Home.js                   # Root Component (home)
-│        └── todo                           # Route (todo)
-│             ├── index.js                  # Root Container (todo)
-│             ├── Home.js                   # Root Component (todo)
-│             ├── components                # Global Reusable Components
-│             ├── containers                # Global Reusable Container Components
-│             └── modules                   # Main action logic files (include Action, Reducer, Action Creator)
-│                  ├── reducers.js          # Combine Reducers for Main render
-│                  ├── todos.js             # Functions such as `ADD_TODO`
-│                  └── todos.spec.js        # Unit test
-└── LICENSE                                 # License is MIT
+├── public                             # static public assets (not imported anywhere in source code)
+├── src                                # application source code
+│   ├── index.js                       # main render
+│   ├── reducers.js                    # combine Reducers
+│   ├── registerServiceWorker.js       # Offline cache https://goo.gl/KwvDNy
+│   ├── shareComponents                # share Components
+│   │   └── Header.js                  # page header
+│   ├── utils                          # convenient things
+│   │   ├── logo.svg                   # React icon
+│   │   ├── consts.js                  # your ENV
+│   │   └── injectStyle.js             # you can use `@keyframes`
+│   └── app                            # application main sources
+│        ├── App.js                    # application routing
+│        ├── home                      # [home] `localhost:3000/`
+│        │   ├── index.js              # [home] main Container
+│        │   └── Home.js               # [home] main Component
+│        └── todo                      # [todo] `localhost:3000/todo`
+│             ├── index.js             # [todo] main Container
+│             ├── Home.js              # [todo] main Component
+│             ├── components           # [todo] Components
+│             ├── containers           # [todo] Container Components
+│             └── modules              # [todo] main action logic files (include in `Action` , `Reducer` , `Action Creator` )
+│                  ├── reducers.js     # [todo] combine Reducers
+│                  ├── todos.js        # [todo] todo module
+│                  └── todos.spec.js   # [todo] todo module unit test
+└── LICENSE                            # License is MIT
 ```
 
 I will modify the structure diagram in the near future.
 
 ![structure](https://raw.githubusercontent.com/shiopon01/redux-starter-kit/images/structure.jpg)
 
-I feel that all application include API requests. So I included 'redux-thunk' in this repository. (And, 'redux-logger' :D)
+I feel that all application include API requests. So I included 'redux-thunk' in this repository. (and, `redux-logger` )
 
 ## Supplement
 
