@@ -46,5 +46,9 @@ I feel that all application include API requests. So I included 'redux-thunk' in
 
 This application depends on the `react-script`. However, if you are not satisfied then please run `npm run eject`.
 
+- If you want to unit test.
+  - run `yarn test`
+- If you want to execute Prettier.
+  - run `yarn eslint --fix .`
 - If you find an ENOSPC error when you run `yarn test` anymore
   - run `echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p`
