@@ -29,7 +29,7 @@ The project structure presented in this template is module structure, where func
 │             ├── Home.js              # [todo] main Component
 │             ├── components           # [todo] Components
 │             ├── containers           # [todo] Container Components
-│             └── modules              # [todo] main action logic files (include in `Action` , `Reducer` , `Action Creator` )
+│             └── modules              # [todo] main action logic files (include in `Action`, `Reducer`, `Action Creator`)
 │                  ├── reducers.js     # [todo] combine Reducers
 │                  ├── todos.js        # [todo] todo module
 │                  └── todos.spec.js   # [todo] todo module unit test

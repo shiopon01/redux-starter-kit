@@ -9,14 +9,19 @@ const HomeComponent = () => (
 
     <div style={css.container}>
       <p style={css.appIntro}>
-        To get started, edit <code>src/app/home/Home.js</code> and save to reload.
+        To get started, edit <code>src/app/home/Home.js</code> and save to
+        reload.
       </p>
       <div style={css.box}>
         <p style={css.message}>
-          Hi.<br />
+          Hi.
+          <br />
           This is React/Redux starter kit.
           <br />
-          repository link: <a href="https://github.com/shiopon01/redux-starter-kit">https://github.com/shiopon01/redux-starter-kit</a>
+          repository link:{' '}
+          <a href="https://github.com/shiopon01/redux-starter-kit">
+            https://github.com/shiopon01/redux-starter-kit
+          </a>
         </p>
       </div>
     </div>
@@ -59,7 +64,7 @@ const css = {
     margin: '10px',
     padding: 0,
     wordWrap: 'break-word',
-  }
+  },
 }
 
 export default HomeComponent
