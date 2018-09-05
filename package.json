@@ -8,7 +8,7 @@
     "react-dom": "^16.4.2",
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "1.1.4",
+    "react-scripts": "1.1.5",
     "redux": "^4.0.0",
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.3.0"
@@ -26,12 +26,12 @@
   "author": "shiopon01 <shio.0323@gmail.com> (http://shiopon.net)",
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^5.2.0",
+    "eslint": "^5.5.0",
     "eslint-config-prettier": "^3.0.1",
-    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-prettier": "^2.6.2",
-    "eslint-plugin-react": "^7.10.0",
+    "eslint-plugin-react": "^7.11.1",
     "eslint-plugin-react-redux": "^2.3.0",
-    "prettier": "^1.14.0"
+    "prettier": "^1.14.2"
   }
 }
