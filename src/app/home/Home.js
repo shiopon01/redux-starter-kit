@@ -23,18 +23,6 @@ const HomeComponent = () => (
 );
 
 const css = {
-  app: {
-    textAlign: 'center'
-  },
-
-  container: {
-    marginTop: '10px',
-    display: 'grid',
-    gridGap: '15px',
-    gridTemplateColumns: '10% 1fr 10%',
-    gridTemplateRows: '1fr'
-  },
-
   appIntro: {
     fontSize: 'large',
     gridColumn: '2',
@@ -52,12 +40,6 @@ const css = {
     background: 'white',
     borderTop: 'solid 5px #5d627b',
     boxShadow: '0 3px 5px rgba(0, 0, 0, 0.22)'
-  },
-
-  message: {
-    margin: '10px',
-    padding: 0,
-    wordWrap: 'break-word'
   }
 };
 
