@@ -21,7 +21,8 @@ const Header = () => (
 
 const css = {
   header: {
-    marginBottom: '10px'
+    marginBottom: '10px',
+    textAlign: 'center'
   },
 
   appHeader: {

@@ -1,12 +1,7 @@
 import React from 'react';
 
-// import components
-import Header from '../../shareComponents/Header';
-
 const HomeComponent = () => (
   <div style={css.app}>
-    <Header />
-
     <div style={css.container}>
       <p style={css.appIntro}>
         To get started, edit <code>src/app/home/Home.js</code> and save to reload.

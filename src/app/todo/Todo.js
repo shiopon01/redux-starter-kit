@@ -1,15 +1,10 @@
 import React from 'react';
 
-// import components
-import Header from '../../shareComponents/Header';
-
 import TodoList from './containers/TodoList';
 import AddTodo from './containers/AddTodo';
 
 const TodoComponent = () => (
   <div style={css.app}>
-    <Header />
-
     <div style={css.container}>
       <div style={css.addTodo}>
         <AddTodo />

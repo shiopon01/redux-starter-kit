@@ -13,7 +13,7 @@ The project structure presented in this template is module structure, where func
 │   ├── index.js                       # main render
 │   ├── reducers.js                    # combine Reducers
 │   ├── registerServiceWorker.js       # Offline cache https://goo.gl/KwvDNy
-│   ├── shareComponents                # share Components
+│   ├── share                          # share Components
 │   │   └── Header.js                  # page header
 │   ├── utils                          # convenient things
 │   │   ├── logo.svg                   # React icon
@@ -36,10 +36,6 @@ The project structure presented in this template is module structure, where func
 └── LICENSE                            # License is MIT
 ```
 
-I will modify the structure diagram in the near future.
-
-![structure](https://raw.githubusercontent.com/shiopon01/redux-starter-kit/images/structure.jpg)
-
 I feel that all application include API requests. So I included 'redux-thunk' in this repository. (and, `redux-logger` )
 
 ## Supplement
@@ -48,7 +44,7 @@ This application depends on the `react-script`. However, if you are not satisfie
 
 - If you want to unit test.
   - run `yarn test`
-- If you want to execute Prettier.
-  - run `yarn eslint --fix .`
+- If you want to execute eslint and prettier.
+  - run `yarn fix`
 - If you find an ENOSPC error when you run `yarn test` anymore
   - run `echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p`
