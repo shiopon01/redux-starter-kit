@@ -1,20 +1,18 @@
-import { connect } from 'react-redux'
+import { connect } from 'react-redux';
 
 // import component
-import AddTodo from '../components/AddTodo'
+import AddTodo from '../components/AddTodo';
 
 // import actions
-import { addTodo } from '../modules/todos'
+import { addTodo } from '../modules/todos';
 
-const mapDispatchToProps = dispatch => {
-  return {
-    addTodoClick: value => dispatch(addTodo(value)),
-  }
-}
+const mapDispatchToProps = dispatch => ({
+  addTodoClick: value => dispatch(addTodo(value))
+});
 
 const AddTodoContainer = connect(
   null,
   mapDispatchToProps
-)(AddTodo)
+)(AddTodo);
 
-export default AddTodoContainer
+export default AddTodoContainer;

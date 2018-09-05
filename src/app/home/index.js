@@ -1,8 +1,8 @@
-import { connect } from 'react-redux'
+import { connect } from 'react-redux';
 
 // Page root component
-import HomeComponent from './Home'
+import HomeComponent from './Home';
 
-const HomeContainer = connect()(HomeComponent)
+const HomeContainer = connect()(HomeComponent);
 
-export default HomeContainer
+export default HomeContainer;

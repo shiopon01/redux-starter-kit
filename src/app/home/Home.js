@@ -1,7 +1,7 @@
-import React from 'react'
+import React from 'react';
 
 // import components
-import Header from '../../shareComponents/Header'
+import Header from '../../shareComponents/Header';
 
 const HomeComponent = () => (
   <div style={css.app}>
@@ -9,8 +9,7 @@ const HomeComponent = () => (
 
     <div style={css.container}>
       <p style={css.appIntro}>
-        To get started, edit <code>src/app/home/Home.js</code> and save to
-        reload.
+        To get started, edit <code>src/app/home/Home.js</code> and save to reload.
       </p>
       <div style={css.box}>
         <p style={css.message}>
@@ -26,11 +25,11 @@ const HomeComponent = () => (
       </div>
     </div>
   </div>
-)
+);
 
 const css = {
   app: {
-    textAlign: 'center',
+    textAlign: 'center'
   },
 
   container: {
@@ -38,13 +37,13 @@ const css = {
     display: 'grid',
     gridGap: '15px',
     gridTemplateColumns: '10% 1fr 10%',
-    gridTemplateRows: '1fr',
+    gridTemplateRows: '1fr'
   },
 
   appIntro: {
     fontSize: 'large',
     gridColumn: '2',
-    gridRow: '1',
+    gridRow: '1'
   },
 
   box: {
@@ -57,14 +56,14 @@ const css = {
     color: '#5d627b',
     background: 'white',
     borderTop: 'solid 5px #5d627b',
-    boxShadow: '0 3px 5px rgba(0, 0, 0, 0.22)',
+    boxShadow: '0 3px 5px rgba(0, 0, 0, 0.22)'
   },
 
   message: {
     margin: '10px',
     padding: 0,
-    wordWrap: 'break-word',
-  },
-}
+    wordWrap: 'break-word'
+  }
+};
 
-export default HomeComponent
+export default HomeComponent;

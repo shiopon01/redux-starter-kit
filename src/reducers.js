@@ -1,11 +1,11 @@
-import { combineReducers } from 'redux'
+import { combineReducers } from 'redux';
 
 // Aggregate Reducers of each routes
 
-import todo from './app/todo/modules/reducers'
+import todo from './app/todo/modules/reducers';
 
 const rootReducer = combineReducers({
-  todo,
-})
+  todo
+});
 
-export default rootReducer
+export default rootReducer;

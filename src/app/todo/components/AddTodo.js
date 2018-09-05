@@ -1,25 +1,25 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
+import PropTypes from 'prop-types';
 
 const AddTodo = ({ addTodoClick }) => {
-  let input
+  let input;
 
   return (
     <div>
       <form
         onSubmit={e => {
-          e.preventDefault()
+          e.preventDefault();
           if (!input.value.trim()) {
-            return
+            return;
           }
-          addTodoClick(input.value)
-          input.value = ''
+          addTodoClick(input.value);
+          input.value = '';
         }}
       >
         <input
           style={css.input}
           ref={node => {
-            input = node
+            input = node;
           }}
         />
         <button style={css.button} type="submit">
@@ -27,23 +27,23 @@ const AddTodo = ({ addTodoClick }) => {
         </button>
       </form>
     </div>
-  )
-}
+  );
+};
 
 const css = {
   input: {
     width: '100%',
-    fontSize: '1.5em',
+    fontSize: '1.5em'
   },
 
   button: {
     width: '90%',
-    fontSize: '1.5em',
-  },
-}
+    fontSize: '1.5em'
+  }
+};
 
 AddTodo.propTypes = {
-  addTodoClick: PropTypes.func.isRequired,
-}
+  addTodoClick: PropTypes.func.isRequired
+};
 
-export default AddTodo
+export default AddTodo;

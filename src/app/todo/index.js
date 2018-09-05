@@ -1,8 +1,8 @@
-import { connect } from 'react-redux'
+import { connect } from 'react-redux';
 
 // Page root component
-import TodoComponent from './Todo'
+import TodoComponent from './Todo';
 
-const TodoContainer = connect()(TodoComponent)
+const TodoContainer = connect()(TodoComponent);
 
-export default TodoContainer
+export default TodoContainer;

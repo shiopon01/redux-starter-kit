@@ -1,6 +1,6 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import logo from '../utils/logo.svg'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import logo from '../utils/logo.svg';
 
 const Header = () => (
   <div style={css.header}>
@@ -17,28 +17,28 @@ const Header = () => (
       </li>
     </ul>
   </div>
-)
+);
 
 const css = {
   header: {
-    marginBottom: '10px',
+    marginBottom: '10px'
   },
 
   appHeader: {
     textAlign: 'center',
     backgroundColor: '#2C3761',
     padding: '10px',
-    color: 'white',
+    color: 'white'
   },
 
   appLogo: {
     animation: 'App-logo-spin infinite 20s linear',
-    height: '80px',
+    height: '80px'
   },
 
   appTitle: {
-    fontSize: '1.5em',
-  },
-}
+    fontSize: '1.5em'
+  }
+};
 
-export default Header
+export default Header;

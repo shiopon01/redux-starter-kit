@@ -1,11 +1,11 @@
-import { combineReducers } from 'redux'
+import { combineReducers } from 'redux';
 
 // Aggregate Reducers for each modules
 
-import todos from './todos'
+import todos from './todos';
 
 const reducers = combineReducers({
-  todos,
-})
+  todos
+});
 
-export default reducers
+export default reducers;

@@ -1,28 +1,25 @@
 {
   "env": {
-    "es6": true,
     "browser": true,
     "node": true,
+    "es6": true,
     "jest": true
   },
   "plugins": [
-    "react-redux"
+    "react-redux",
+    "prettier"
   ],
   "extends": [
-    "eslint:recommended",
     "plugin:import/recommended",
     "plugin:react/recommended",
     "plugin:react-redux/recommended",
-    "plugin:prettier/recommended"
+    "prettier"
   ],
   "rules": {
-    "prettier/prettier": [
-      "error",
-      {
-        "trailingComma": "es5",
-        "singleQuote": true,
-        "semi": false
-      }
-    ]
+    "prettier/prettier": ["error", {
+      "printWidth": 100,
+      "singleQuote": true
+    }],
+    "comma-dangle": ["error", "never"]
   }
 }
