@@ -4,14 +4,14 @@
   "private": true,
   "description": "redux starter kit",
   "dependencies": {
-    "connected-react-router": "^4.4.1",
+    "connected-react-router": "^4.5.0",
     "history": "^4.7.2",
-    "react": "^16.4.2",
-    "react-dom": "^16.4.2",
-    "react-redux": "^5.0.7",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0",
+    "react-redux": "^5.1.0",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "1.1.5",
-    "redux": "^4.0.0",
+    "react-scripts": "2.0.5",
+    "redux": "^4.0.1",
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.3.0"
   },
@@ -29,12 +29,11 @@
   "author": "shiopon01 <shio.0323@gmail.com> (http://shiopon.net)",
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^5.5.0",
-    "eslint-config-prettier": "^3.0.1",
+    "eslint-config-prettier": "^3.1.0",
     "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-prettier": "^2.6.2",
+    "eslint-plugin-prettier": "^3.0.0",
     "eslint-plugin-react": "^7.11.1",
     "eslint-plugin-react-redux": "^2.3.0",
-    "prettier": "^1.14.2"
+    "prettier": "^1.14.3"
   }
 }
