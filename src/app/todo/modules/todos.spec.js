@@ -5,7 +5,7 @@ describe('todo actions 1', () => {
     expect(todos.addTodo('First todo.')).toEqual({
       type: 'ADD_TODO',
       id: 0,
-      text: 'First todo.'
+      text: 'First todo.',
     });
   });
 });
@@ -15,7 +15,7 @@ describe('todo actions 2', () => {
     expect(todos.addTodo('Second todo.')).toEqual({
       type: 'ADD_TODO',
       id: 1,
-      text: 'Second todo.'
+      text: 'Second todo.',
     });
   });
 });

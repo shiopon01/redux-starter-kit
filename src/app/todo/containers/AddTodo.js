@@ -7,12 +7,12 @@ import AddTodo from '../components/AddTodo';
 import { addTodo } from '../modules/todos';
 
 const mapDispatchToProps = dispatch => ({
-  addTodoClick: value => dispatch(addTodo(value))
+  addTodoClick: value => dispatch(addTodo(value)),
 });
 
 const AddTodoContainer = connect(
   null,
-  mapDispatchToProps
+  mapDispatchToProps,
 )(AddTodo);
 
 export default AddTodoContainer;

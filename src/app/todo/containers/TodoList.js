@@ -7,16 +7,16 @@ import TodoList from '../components/TodoList';
 import { toggleTodo } from '../modules/todos';
 
 const mapStateToProps = state => ({
-  todos: state.todo.todos
+  todos: state.todo.todos,
 });
 
 const mapDispatchToProps = dispatch => ({
-  onTodoClick: value => dispatch(toggleTodo(value))
+  onTodoClick: value => dispatch(toggleTodo(value)),
 });
 
 const TodoListContainer = connect(
   mapStateToProps,
-  mapDispatchToProps
+  mapDispatchToProps,
 )(TodoList);
 
 export default TodoListContainer;

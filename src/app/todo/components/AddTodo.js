@@ -1,13 +1,25 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+const css = {
+  input: {
+    width: '100%',
+    fontSize: '1.5em',
+  },
+
+  button: {
+    width: '90%',
+    fontSize: '1.5em',
+  },
+};
+
 const AddTodo = ({ addTodoClick }) => {
   let input;
 
   return (
     <div>
       <form
-        onSubmit={e => {
+        onSubmit={(e) => {
           e.preventDefault();
           if (!input.value.trim()) {
             return;
@@ -18,7 +30,7 @@ const AddTodo = ({ addTodoClick }) => {
       >
         <input
           style={css.input}
-          ref={node => {
+          ref={(node) => {
             input = node;
           }}
         />
@@ -30,20 +42,8 @@ const AddTodo = ({ addTodoClick }) => {
   );
 };
 
-const css = {
-  input: {
-    width: '100%',
-    fontSize: '1.5em'
-  },
-
-  button: {
-    width: '90%',
-    fontSize: '1.5em'
-  }
-};
-
 AddTodo.propTypes = {
-  addTodoClick: PropTypes.func.isRequired
+  addTodoClick: PropTypes.func.isRequired,
 };
 
 export default AddTodo;

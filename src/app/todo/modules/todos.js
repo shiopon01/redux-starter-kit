@@ -13,13 +13,13 @@ export default function todos(state = [], action) {
         {
           id: action.id,
           text: action.text,
-          completed: false
-        }
+          completed: false,
+        },
       ];
 
     case TOGGLE_TODO:
       return state.map(
-        todo => (todo.id === action.id ? { ...todo, completed: !todo.completed } : todo)
+        todo => (todo.id === action.id ? { ...todo, completed: !todo.completed } : todo),
       );
 
     default:
@@ -29,14 +29,14 @@ export default function todos(state = [], action) {
 
 // Action Creators
 
-let nextTodoId = 0;
+const nextTodoId = 0;
 export const addTodo = text => ({
   type: ADD_TODO,
-  id: nextTodoId++,
-  text
+  id: nextTodoId,
+  text,
 });
 
 export const toggleTodo = id => ({
   type: TOGGLE_TODO,
-  id
+  id,
 });

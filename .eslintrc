@@ -1,25 +1,14 @@
 {
-  "env": {
-    "browser": true,
-    "node": true,
-    "es6": true,
-    "jest": true
-  },
   "plugins": [
-    "react-redux",
-    "prettier"
+    "react-redux"
   ],
   "extends": [
-    "plugin:import/recommended",
-    "plugin:react/recommended",
-    "plugin:react-redux/recommended",
-    "prettier"
+    "react-app",
+    "airbnb-base",
+    "plugin:react-redux/recommended"
   ],
   "rules": {
-    "prettier/prettier": ["error", {
-      "printWidth": 100,
-      "singleQuote": true
-    }],
-    "comma-dangle": ["error", "never"]
+    "class-methods-use-this": "off",
+    "no-underscore-dangle": "off"
   }
 }

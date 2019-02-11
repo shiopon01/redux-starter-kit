@@ -8,6 +8,12 @@ import injectStyle from '../utils/injectStyle';
 import Home from './home';
 import Todo from './todo';
 
+const keyframesStyle = `
+  @keyframes App-logo-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }`;
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -27,11 +33,5 @@ class App extends Component {
     );
   }
 }
-
-const keyframesStyle = `
-  @keyframes App-logo-spin {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
-  }`;
 
 export default App;

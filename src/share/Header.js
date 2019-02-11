@@ -2,6 +2,29 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../utils/logo.svg';
 
+const css = {
+  header: {
+    marginBottom: '10px',
+    textAlign: 'center',
+  },
+
+  appHeader: {
+    textAlign: 'center',
+    backgroundColor: '#2C3761',
+    padding: '10px',
+    color: 'white',
+  },
+
+  appLogo: {
+    animation: 'App-logo-spin infinite 20s linear',
+    height: '80px',
+  },
+
+  appTitle: {
+    fontSize: '1.5em',
+  },
+};
+
 const Header = () => (
   <div style={css.header}>
     <header style={css.appHeader}>
@@ -18,28 +41,5 @@ const Header = () => (
     </ul>
   </div>
 );
-
-const css = {
-  header: {
-    marginBottom: '10px',
-    textAlign: 'center'
-  },
-
-  appHeader: {
-    textAlign: 'center',
-    backgroundColor: '#2C3761',
-    padding: '10px',
-    color: 'white'
-  },
-
-  appLogo: {
-    animation: 'App-logo-spin infinite 20s linear',
-    height: '80px'
-  },
-
-  appTitle: {
-    fontSize: '1.5em'
-  }
-};
 
 export default Header;

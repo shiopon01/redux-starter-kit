@@ -1,3 +1,9 @@
+# WIP
+
+# WIP
+
+# WIP
+
 This repository is React/Redux starter kit.
 
 Recently, SPA of one page is very few. Therefore, `redux-starter-kit` supported to **react-router**.
